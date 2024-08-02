@@ -322,7 +322,7 @@ async experienceOn(skuNumber, fatherContainer){
 const mudiExperience = new MudiExperience();
 setTimeout(()=>{
     let sku = document.head.querySelector('[property="product:sku"]').getAttribute('content');
-    let container = document.body.querySelector('.Prochampions-Prochampions-theme-15-x-product-images-container').parentNode;
+    let container = document.querySelector('.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--desktop__product--content');
     mudiExperience.experienceOn( sku , container );
 },1500) 
 
