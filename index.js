@@ -72,11 +72,10 @@ createBtns(){
             <defs>
                 <style>
                     .cls-1{filter:url(#drop-shadow-11);}
-                    .cls-2{fill:#adb627;opacity:.5;}
+                    .cls-2{fill:#adb627;opacity:.9;}
                     .cls-2,.cls-3{stroke-width:0px;}
-                    .cls-4{fill:#e5f6fc;stroke:#fff;stroke-miterlimit:10;stroke-width:7.53px;}
+                    .cls-4{fill:#f2f2f2;stroke:#f2f2f2;stroke-miterlimit:10;stroke-width:7.53px;}
                     .cls-3{fill:#000000;}
-                </style>
                 
                 <filter id="drop-shadow-11" filterUnits="userSpaceOnUse">
                     <feOffset dx="0" dy="0"/><feGaussianBlur result="blur" stdDeviation="12"/>
