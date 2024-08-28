@@ -5,8 +5,8 @@
     font-style: normal;
 }
 
-body, .containerText, .titleContainer, .tooltipMudi, .textInfoMudi {
-    font-family: 'Biathlon';
+body, .containerText, .titleContainer, .tooltipMudi, .textInfoMudi  {
+    font-family: 'Biathlon' !important;
 }
 
 .tooltipMudi {
