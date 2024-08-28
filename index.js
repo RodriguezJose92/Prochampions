@@ -324,4 +324,4 @@ setTimeout(()=>{
     let sku = document.head.querySelector('[property="product:sku"]').getAttribute('content');
     let container = document.querySelector('.vtex-stack-layout-0-x-stackItem--global__product--images--first');
     mudiExperience.experienceOn( sku , container );
-},1500) 
+},500) 
