@@ -11,6 +11,7 @@ body, .containerText, .titleContainer, .tooltipMudi, .textInfoMudi {
 
 .tooltipMudi {
     background-color: #d8d8d8;
+    font-family: 'Biathlon' !important; /* Asegura que la fuente se aplique */
     width: 320px;
     font-size: 14px;
     padding: 13px;
