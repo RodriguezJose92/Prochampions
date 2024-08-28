@@ -9,6 +9,16 @@ body, .containerText, .titleContainer, .tooltipMudi, .textInfoMudi  {
     font-family: 'Biathlon' !important;
 }
 
+.titleContainer{
+    font-family: 'Biathlon' !important;
+    
+}
+
+
+.containerText{
+    font-family: 'Biathlon' !important;
+}
+
 .tooltipMudi {
     background-color: #d8d8d8;
     font-family: 'Biathlon' !important; /* Asegura que la fuente se aplique */
