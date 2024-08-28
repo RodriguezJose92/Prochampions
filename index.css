@@ -34,7 +34,7 @@
 
 .tooltipMudi {
     background-color: #d8d8d8;
-    font-family: sans-serif;
+    font-family: Biathlon;
     width: 320px;
     font-size: 14px;
     padding: 13px 13px;
@@ -45,6 +45,23 @@
     right: 114%;
     filter: drop-shadow(3px 5px 5px rgba(10, 10, 10, 0.196));
     color: black;
+}
+
+
+@font-face {
+    font-family: 'Biathlon';
+    src: url('https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/biathlon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.textInfoMudi {
+    font-family: 'Roboto';
+}
+
+body, .containerText, .titleContainer {
+    font-family: 'Roboto';
 }
 
 
@@ -252,7 +269,7 @@
 
 .tooltipMudi {
     background-color: #d8d8d8;
-    font-family: sans-serif;
+    font-family: Biathlon;
     width: 300px;
     font-size: 12px;
     padding: 13px 13px;
