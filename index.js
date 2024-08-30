@@ -153,7 +153,7 @@ class MudiExperience{
                     </svg>
     
                     <div id="containerQR" class="containerQRMudi" style="background-color:${this.color}">
-                        <img class="mudiQR" src="https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/qrProchampionprueba.jpg}" >
+                        <img class="mudiQR" src="https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/qrProchampionprueba.jpg" >
     
                         <div class="containerText">
                             <div class="titleContainer">
