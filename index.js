@@ -165,7 +165,7 @@ class MudiExperience{
                                 <div class="iconTitle">
                                     <img class="stepMudi step1" src="https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/step3.webp">
                                 </div>
-                                <p class="textInfoMudi">Apunta el teléfono al piso.</p>
+                                <p class="textInfoMudi">Apunta el teléfono a tus pies.</p>
                             </div>
     
                             <div class="titleContainer">
