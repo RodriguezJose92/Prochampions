@@ -1,5 +1,5 @@
 /** Mudi Experience */
-class MudiExperience{
+class MudiExperienceTest{
 
     constructor(){
         this.color              = "#adb627";
@@ -96,7 +96,8 @@ class MudiExperience{
     
         containerBtns.querySelector('#img3DBtn').addEventListener('click',()=>{
             this.createModal();
-            //this.sendEventInteraction('3D');
+              /** GTM */
+             this.sendEventInteraction("3D");
         });
     
         fragment.appendChild(containerBtns)
@@ -219,7 +220,7 @@ class MudiExperience{
             else {
                 window.open(`https://mudi.com.co/animatedExperiences/stealthmasters/860011660873/algo.html?sku=prochampion`,"_BLANK");
             } 
-            // flagAR && this.sendEventInteraction('AR')
+            flagAR && this.sendEventInteraction('AR')
         });
     
         /** Verify Style Bttn AR  */
@@ -232,15 +233,19 @@ class MudiExperience{
                 document.body.querySelector('.cls-1_modal').style.fill=color,
                 icon.forEach((icon)=>icon.style.fill="white"),
                 document.body.querySelector('.cls-2_modal').style.fill="white"
+              
             ) 
             : (
                 document.body.querySelector('.cls-1_modal').style.fill="white",
                 icon.forEach((icon)=>icon.style.fill=color),
                 document.body.querySelector('.cls-2_modal').style.fill=color
+        
             )
         };
     
         document.body.appendChild(modalMudi)
+
+      
     };
     
     /** create tooltip ✔️ */
@@ -311,14 +316,17 @@ class MudiExperience{
         this.createStyles();
         /** Create Buttons */
         this.createBtns();
+
+        /** Viewer event GTM  */
+         this.sendEventViewer();
     
     };
     
     };
     
-    const mudiExperience = new MudiExperience();
+    const mudiExperienceTest = new MudiExperienceTest();
     setTimeout(()=>{
         let sku = document.head.querySelector('[property="product:sku"]').getAttribute('content');
         let container = document.querySelector('.vtex-stack-layout-0-x-stackItem--global__product--images--first');
-        mudiExperience.experienceOn( sku , container );
+        mudiExperienceTest.experienceOn( sku , container );
     },1500) 
