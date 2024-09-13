@@ -257,42 +257,40 @@ class MudiExperience{
         return tooltip;
     };
     
+    
     /** Send Evnt Interacción  ✔️ */
     sendEventInteraction(eventName){
-    
+  
         let OSdevice;
-    
+  
         if (navigator.userAgent.includes('Android')) OSdevice = 'Android';
         else if (navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPad')) OSdevice = "IOS";
         else OSdevice = 'DESK';
-    
+  
         window.dataLayer && dataLayer.push({
             event: `Evento de interaccion ${eventName}`,
             valorMudi: 1,
             sku: this.skuNumber,
-            category: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[1].children[0].innerHTML,
-            subCategory: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[2].children[0].innerHTML,
             sistemaOperativo: OSdevice
         })
     };
-    
+  
     /** viewer event Mudi GTM  */
     sendEventViewer(){
         let OSdevice;
-    
+  
         if (navigator.userAgent.includes('Android')) OSdevice = 'Android';
         else if (navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPad')) OSdevice = "IOS";
         else OSdevice = 'DESK';
-    
+  
         window.dataLayer && dataLayer.push({
             event: `visualizacion_botones`,
             valorMudi: 1,
             sku: this.skuNumber,
-            category: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[1].children[0].innerHTML,
-            subCategory: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[2].children[0].innerHTML,
             sistemaOperativo: OSdevice
         })
     };
+  
     
     /** verifyExperience  ✔️ */
     async experienceOn(skuNumber, fatherContainer){
