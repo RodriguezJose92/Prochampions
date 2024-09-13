@@ -290,7 +290,6 @@ class MudiExperience{
             sistemaOperativo: OSdevice
         })
     };
-  
     
     /** verifyExperience  ✔️ */
     async experienceOn(skuNumber, fatherContainer){
