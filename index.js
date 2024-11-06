@@ -1,71 +1,72 @@
 /** Mudi Experience */
-class MudiExperienceTest{
+class MudiExperience {
 
-    constructor(){
-        this.color              = "#adb627";
-        this.dataSever          = null;
-        this.skuNumber          = null;
-        this.fatherContainer    = null;
-        this.URLActual          = null;
+    constructor() {
+        this.color = "#adb627";
+        this.dataSever = null;
+        this.skuNumber = null;
+        this.fatherContainer = null;
+        this.URLActual = null;
     };
-    
+
     /** Conect mudiServer  ✔️ */
-    async conectServer(skuNumber){
-        
-        const myBody = {"skus":[skuNumber]};
+    async conectServer(skuNumber) {
+
+        const myBody = { "skus": [skuNumber] };
         this.skuNumber = skuNumber;
-    
+
         try {
-    
+
             /** We make the request to the MUDI server */
-            const 
-            request = await fetch('https://mudiview.mudi.com.co:7443/product/getProductsUrl',{
-                method:'POST',
-                headers:{   "Content-type":"application/json",
-                            "tokenapi":"64fNgNt8eWuD5fqyNqkD"
-                },
-                body: JSON.stringify(myBody)
-            })
-            const 
-            response = await request.json();
+            const
+                request = await fetch('https://mudiview.mudi.com.co:7443/product/getProductsUrl', {
+                    method: 'POST',
+                    headers: {
+                        "Content-type": "application/json",
+                        "tokenapi": "64fNgNt8eWuD5fqyNqkD"
+                    },
+                    body: JSON.stringify(myBody)
+                })
+            const
+                response = await request.json();
             this.dataServer = response.data[0];
-    
-        } catch (error) {console.error(`Mudi Error:\n${error}`)}
-    
+
+        } catch (error) { console.error(`Mudi Error:\n${error}`) }
+
     };
-    
+
     /** Create Styles ✔️ */
-    createStyles(){
-    
+    createStyles() {
+
         /** Verify element HTML */
-        if(document.head.querySelector('#stylesMudiGeneral')){return}
-    
-        const 
-        link = document.createElement('LINK');
-        link.setAttribute('rel','stylesheet');
-        link.id="stylesMudiGeneral";
-        link.href=`https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/index.css`; /* custom this path */
-        
+        if (document.head.querySelector('#stylesMudiGeneral')) { return }
+
+        const
+            link = document.createElement('LINK');
+        link.setAttribute('rel', 'stylesheet');
+        link.id = "stylesMudiGeneral";
+        link.href = `https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/index.css`; /* custom this path */
+
         document.head.appendChild(link)
     };
-    
+
     /** Create button only 3D  ✔️*/
-    createBtns(){
-    
+    createBtns() {
+
         /** Verify btns */
         document.body.querySelector('.btnsMudiContainer') && document.body.querySelector('.btnsMudiContainer').remove();
-    
+
         /** Create Fragment */
         const fragment = document.createDocumentFragment();
-    
+
         /** Create containers */
-        const 
-        containerBtns = document.createElement('DIV');
+        const
+            containerBtns = document.createElement('DIV');
         containerBtns.classList.add('btnsMudiContainer');
         containerBtns.id = 'btnsModule3D'
         containerBtns.appendChild(this.createTooltip());
-        containerBtns.setAttribute('sku',this.skuNumber)
-        containerBtns.innerHTML +=`
+        containerBtns.setAttribute('sku', this.skuNumber)
+        containerBtns.innerHTML += `
         <?xml version="1.0" encoding="UTF-8"?>
     
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="img3DBtn" class="btnMudi3D" viewBox="0 0 300 300">
@@ -93,31 +94,31 @@ class MudiExperienceTest{
                 </g>
             </svg>
         `;
-    
-        containerBtns.querySelector('#img3DBtn').addEventListener('click',()=>{
+
+        containerBtns.querySelector('#img3DBtn').addEventListener('click', () => {
             this.createModal();
-              /** GTM */
-             this.sendEventInteraction("3D");
+            /** GTM */
+            this.sendEventInteraction("3D");
         });
-    
+
         fragment.appendChild(containerBtns)
-    
+
         /** Add DOM */
         this.fatherContainer.appendChild(fragment)
     };
-    
+
     /** Create Modal ✔️ */
-    createModal(){
-    
+    createModal() {
+
         /** create variables */
         let flagAR = false;
-    
+
         /** We create a shell for the MUDI modal */
-        const 
-        modalMudi = document.createElement('DIV');
-        modalMudi.id=`modalMudi`;
+        const
+            modalMudi = document.createElement('DIV');
+        modalMudi.id = `modalMudi`;
         modalMudi.classList.add(`mudiModal`);
-        modalMudi.innerHTML=`
+        modalMudi.innerHTML = `
             <div class="iframeMudi3D">
                 <button class="closeModalMudi" style="color:${this.color}">X</button>
                 <iframe class="modelMudi" src="${this.dataServer.URL_WEB}"></iframe>
@@ -195,83 +196,82 @@ class MudiExperienceTest{
                 </div>
             </div>
         `;
-    
+
         /** We close the MUDI modal*/
-        modalMudi.querySelector(`.closeModalMudi`).addEventListener('click',()=>{
+        modalMudi.querySelector(`.closeModalMudi`).addEventListener('click', () => {
             document.body.querySelector('#modalMudi').remove();
         });
-    
+
         /** Init ARExperience */
-        modalMudi.querySelector(`#imgARBtn`).addEventListener('click',()=>{
-    
-            if(window.innerWidth>1000){
-                !flagAR 
-                ? (
-                    document.body.querySelector('.containerQRMudi').style.right="0%",
-                    changeStyleBtnAR(flagAR,this.color),
-                    flagAR = !flagAR
-                )
-                : (
-                    document.body.querySelector('.containerQRMudi').style.right="-150%",
-                    changeStyleBtnAR(flagAR,this.color),
-                    flagAR = !flagAR
-                )
+        modalMudi.querySelector(`#imgARBtn`).addEventListener('click', () => {
+
+            if (window.innerWidth > 1000) {
+                !flagAR
+                    ? (
+                        document.body.querySelector('.containerQRMudi').style.right = "0%",
+                        changeStyleBtnAR(flagAR, this.color),
+                        flagAR = !flagAR
+                    )
+                    : (
+                        document.body.querySelector('.containerQRMudi').style.right = "-150%",
+                        changeStyleBtnAR(flagAR, this.color),
+                        flagAR = !flagAR
+                    )
             }
             else {
-                window.open(`https://mudi.com.co/animatedExperiences/stealthmasters/860011660873/algo.html?sku=prochampion`,"_BLANK");
-            } 
+                window.open(`https://mudi.com.co/animatedExperiences/stealthmasters/860011660873/algo.html?sku=prochampion`, "_BLANK");
+            }
             flagAR && this.sendEventInteraction('AR')
         });
-    
+
         /** Verify Style Bttn AR  */
-        function changeStyleBtnAR(flagAR,color){
-    
+        function changeStyleBtnAR(flagAR, color) {
+
             let icon = document.body.querySelectorAll('.cls-3_modal')
-    
+
             flagAR
-            ? (
-                document.body.querySelector('.cls-1_modal').style.fill=color,
-                icon.forEach((icon)=>icon.style.fill="white"),
-                document.body.querySelector('.cls-2_modal').style.fill="white"
-              
-            ) 
-            : (
-                document.body.querySelector('.cls-1_modal').style.fill="white",
-                icon.forEach((icon)=>icon.style.fill=color),
-                document.body.querySelector('.cls-2_modal').style.fill=color
-        
-            )
+                ? (
+                    document.body.querySelector('.cls-1_modal').style.fill = color,
+                    icon.forEach((icon) => icon.style.fill = "white"),
+                    document.body.querySelector('.cls-2_modal').style.fill = "white"
+
+                )
+                : (
+                    document.body.querySelector('.cls-1_modal').style.fill = "white",
+                    icon.forEach((icon) => icon.style.fill = color),
+                    document.body.querySelector('.cls-2_modal').style.fill = color
+
+                )
         };
-    
+
         document.body.appendChild(modalMudi)
 
-      
+
     };
-    
+
     /** create tooltip ✔️ */
-    createTooltip(){
-        const 
-        tooltip = document.createElement('P');
+    createTooltip() {
+        const
+            tooltip = document.createElement('P');
         tooltip.classList.add('tooltipMudi');
-        tooltip.innerHTML=`<b>¡Nuevo!</b> Descubre como se ve este producto en 3D y realidad aumentada en tu espacio`;
-    
-        setTimeout(()=>{
+        tooltip.innerHTML = `<b>¡Nuevo!</b> Descubre como se ve este producto en 3D y realidad aumentada en tu espacio`;
+
+        setTimeout(() => {
             document.body.querySelector('.tooltipMudi').remove();
-        },9000)
-    
+        }, 9000)
+
         return tooltip;
     };
-    
-    
+
     /** Send Evnt Interacción  ✔️ */
-    sendEventInteraction(eventName){
-  
+    sendEventInteraction(eventName) {
+
         let OSdevice;
-  
+
         if (navigator.userAgent.includes('Android')) OSdevice = 'Android';
         else if (navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPad')) OSdevice = "IOS";
         else OSdevice = 'DESK';
-  
+
         window.dataLayer && dataLayer.push({
             event: `Evento de interaccion ${eventName}`,
             valorMudi: 1,
@@ -279,15 +279,15 @@ class MudiExperienceTest{
             sistemaOperativo: OSdevice
         })
     };
-  
+
     /** viewer event Mudi GTM  */
-    sendEventViewer(){
+    sendEventViewer() {
         let OSdevice;
-  
+
         if (navigator.userAgent.includes('Android')) OSdevice = 'Android';
         else if (navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPad')) OSdevice = "IOS";
         else OSdevice = 'DESK';
-  
+
         window.dataLayer && dataLayer.push({
             event: `visualizacion_botones`,
             valorMudi: 1,
@@ -295,38 +295,40 @@ class MudiExperienceTest{
             sistemaOperativo: OSdevice
         })
     };
-    
+
     /** verifyExperience  ✔️ */
-    async experienceOn(skuNumber, fatherContainer){
-    
+    async experienceOn(skuNumber, fatherContainer) {
+
         /** Verify father Container */
         fatherContainer && (this.fatherContainer = fatherContainer);
-    
+
         /** Response Mudi server */
         await this.conectServer(skuNumber);
-    
+
         /** verify process */
-        if (!this.dataServer){
+        if (!this.dataServer) {
             document.body.querySelector('.btnsMudiContainer') && document.body.querySelector('.btnsMudiContainer').remove();
             console.warn(`El sku: ${skuNumber} no posee experiencias de 3D  y AR`)
             return;
         }
-    
+
         /** Create Styles */
         this.createStyles();
         /** Create Buttons */
         this.createBtns();
 
         /** Viewer event GTM  */
-         this.sendEventViewer();
-    
+        this.sendEventViewer();
+
     };
-    
-    };
-    
-    const mudiExperienceTest = new MudiExperienceTest();
-    setTimeout(()=>{
-        let sku = document.head.querySelector('[property="product:sku"]').getAttribute('content');
-        let container = document.querySelector('.vtex-stack-layout-0-x-stackItem--global__product--images--first');
-        mudiExperienceTest.experienceOn( sku , container );
-    },1500) 
+
+};
+
+const mudiExperience = new MudiExperience();
+
+setTimeout(() => {
+    let sku = document.head.querySelector('[property="product:sku"]').getAttribute('content');
+    let container = document.querySelector('.vtex-stack-layout-0-x-stackItem--global__product--images--first');
+    mudiExperience.experienceOn(sku, container);
+    console.log('probando CDN desde Casa')
+}, 1500) 
