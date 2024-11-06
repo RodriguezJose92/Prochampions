@@ -2,7 +2,6 @@
 if (window.mudiExperience) {
     window.mudiExperience.mudiRequest();
     console.log('Existe el objeto en window')
-    return
 }
 else {
 
