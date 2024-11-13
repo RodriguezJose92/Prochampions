@@ -119,39 +119,207 @@ else {
 
             /** Verify VTO  */
             const SkuVTO = {
-                sku179269: {
-                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/179269.png",
-                    name: "179269"
-                },
-                sku177737: {
-                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/177737.png",
-                    name: "177737"
-                },
+
+                // ADIDAS ULTRABOOST 5 W TENIS BLANCO DE MUJER PARA CORRER
+
                 sku172658: {
                     imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
                     name: "prochampion"
                 },
+                sku172659: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172660: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172661: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172662: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172663: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172664: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172665: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172666: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+
+                // ADIDAS ULTRABOOST 5 TENIS BLANCO DE HOMBRE PARA CORRER
+
+
                 sku172648: {
                     imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
                     name: "prochampion"
-                }
-            };
+                },
 
-            const consultVTO = `sku${this.skuNumber}`
-            if (consultVTO in SkuVTO) {
-                this.dataServer.URL_QR = SkuVTO[consultVTO].imgqr;
-                this.dataServer.URL_AR = `https://viewer.mudi.com.co/v1/mudiVTO/?sku=${SkuVTO[consultVTO].name}`
-            };
+                sku172652: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172653: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172654: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+
+                sku172655: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172656: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172657: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+
+                sku172649: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172651: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                sku172801: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/prochampion.png",
+                    name: "prochampion"
+                },
+
+                // Nike Air Zoom Pegasus 41
+
+
+                sku179269: {
+
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/179269.png",
+                    name: "179269"
+                },
+
+                sku179275: {
+
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/179269.png",
+                    name: "179269"
+                },
+
+                sku179276: {
+
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/179269.png",
+                    name: "179269"
+                },
+
+                sku179272: {
+
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/179269.png",
+                    name: "179269"
+                },
+
+                sku179273: {
+
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/179269.png",
+                    name: "179269"
+                },
+
+                sku179274: {
+
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/179269.png",
+                    name: "179269"
+                },
+
+
+                // Asics Novablast 4
+
+
+                sku177737: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/177737.png",
+                    name: "177737"
+                },
+
+
+                sku178055: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/177737.png",
+                    name: "177737"
+                },
+
+
+
+                sku178051: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/177737.png",
+                    name: "177737"
+                },
+
+
+
+                sku178052: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/177737.png",
+                    name: "177737"
+                },
+
+
+                sku178053: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/177737.png",
+                    name: "177737"
+                },
+
+
+                sku178054: {
+                    imgqr: "https://cdn.jsdelivr.net/gh/RodriguezJose92/Prochampions@latest/assets/QRVTO/177737.png",
+                    name: "177737"
+                }
+
+        
+        };
+
+        const consultVTO = `sku${this.skuNumber}`
+        if(consultVTO in SkuVTO) {
+            this.dataServer.URL_QR = SkuVTO[consultVTO].imgqr;
+            this.dataServer.URL_AR = `https://viewer.mudi.com.co/v1/mudiVTO/?sku=${SkuVTO[consultVTO].name}`
+        };
 
             /** create variables */
             let flagAR = false;
 
-            /** We create a shell for the MUDI modal */
-            const
-                modalMudi = document.createElement('DIV');
-            modalMudi.id = `modalMudi`;
-            modalMudi.classList.add(`mudiModal`);
-            modalMudi.innerHTML = `
+    /** We create a shell for the MUDI modal */
+    const
+        modalMudi = document.createElement('DIV');
+    modalMudi.id = `modalMudi`;
+    modalMudi.classList.add(`mudiModal`);
+    modalMudi.innerHTML = `
                 <div class="iframeMudi3D">
                     <button class="closeModalMudi" style="color:${this.color}">X</button>
                     <iframe class="modelMudi" src="${this.dataServer.URL_WEB}"></iframe>
@@ -230,149 +398,149 @@ else {
                 </div>
             `;
 
-            /** We close the MUDI modal*/
-            modalMudi.querySelector(`.closeModalMudi`).addEventListener('click', () => {
-                document.body.querySelector('#modalMudi').remove();
-            });
+    /** We close the MUDI modal*/
+    modalMudi.querySelector(`.closeModalMudi`).addEventListener('click', () => {
+        document.body.querySelector('#modalMudi').remove();
+    });
 
-            /** Init ARExperience */
-            modalMudi.querySelector(`#imgARBtn`).addEventListener('click', () => {
+    /** Init ARExperience */
+    modalMudi.querySelector(`#imgARBtn`).addEventListener('click', () => {
 
-                if (window.innerWidth > 1000) {
-                    !flagAR
-                        ? (
-                            document.body.querySelector('.containerQRMudi').style.right = "0%",
-                            changeStyleBtnAR(flagAR, this.color),
-                            flagAR = !flagAR
-                        )
-                        : (
-                            document.body.querySelector('.containerQRMudi').style.right = "-150%",
-                            changeStyleBtnAR(flagAR, this.color),
-                            flagAR = !flagAR
-                        )
-                }
-                else {
-                    window.open(this.dataServer.URL_AR, "_BLANK");
-                }
-                flagAR && this.sendEventInteraction('AR')
-            });
+        if (window.innerWidth > 1000) {
+            !flagAR
+                ? (
+                    document.body.querySelector('.containerQRMudi').style.right = "0%",
+                    changeStyleBtnAR(flagAR, this.color),
+                    flagAR = !flagAR
+                )
+                : (
+                    document.body.querySelector('.containerQRMudi').style.right = "-150%",
+                    changeStyleBtnAR(flagAR, this.color),
+                    flagAR = !flagAR
+                )
+        }
+        else {
+            window.open(this.dataServer.URL_AR, "_BLANK");
+        }
+        flagAR && this.sendEventInteraction('AR')
+    });
 
-            /** Verify Style Bttn AR  */
-            function changeStyleBtnAR(flagAR, color) {
+    /** Verify Style Bttn AR  */
+    function changeStyleBtnAR(flagAR, color) {
 
-                let icon = document.body.querySelectorAll('.cls-3_modal')
+        let icon = document.body.querySelectorAll('.cls-3_modal')
 
-                flagAR
-                    ? (
-                        document.body.querySelector('.cls-1_modal').style.fill = color,
-                        icon.forEach((icon) => icon.style.fill = "white"),
-                        document.body.querySelector('.cls-2_modal').style.fill = "white"
+        flagAR
+            ? (
+                document.body.querySelector('.cls-1_modal').style.fill = color,
+                icon.forEach((icon) => icon.style.fill = "white"),
+                document.body.querySelector('.cls-2_modal').style.fill = "white"
 
-                    )
-                    : (
-                        document.body.querySelector('.cls-1_modal').style.fill = "white",
-                        icon.forEach((icon) => icon.style.fill = color),
-                        document.body.querySelector('.cls-2_modal').style.fill = color
+            )
+            : (
+                document.body.querySelector('.cls-1_modal').style.fill = "white",
+                icon.forEach((icon) => icon.style.fill = color),
+                document.body.querySelector('.cls-2_modal').style.fill = color
 
-                    )
-            };
+            )
+    };
 
-            document.body.appendChild(modalMudi)
+    document.body.appendChild(modalMudi)
 
-        };
+};
 
-        /** create tooltip ✔️ */
-        createTooltip() {
-            const
-                tooltip = document.createElement('P');
-            tooltip.classList.add('tooltipMudi');
-            tooltip.innerHTML = `<b>¡Nuevo!</b> Descubre como se ve este producto en 3D y realidad aumentada en tu espacio`;
+/** create tooltip ✔️ */
+createTooltip() {
+    const
+        tooltip = document.createElement('P');
+    tooltip.classList.add('tooltipMudi');
+    tooltip.innerHTML = `<b>¡Nuevo!</b> Descubre como se ve este producto en 3D y realidad aumentada en tu espacio`;
 
-            setTimeout(() => {
-                document.body.querySelector('.tooltipMudi').remove();
-            }, 9000)
+    setTimeout(() => {
+        document.body.querySelector('.tooltipMudi').remove();
+    }, 9000)
 
-            return tooltip;
-        };
+    return tooltip;
+};
 
-        /** Send Evnt Interacción  ✔️ */
-        sendEventInteraction(eventName) {
+/** Send Evnt Interacción  ✔️ */
+sendEventInteraction(eventName) {
 
-            let OSdevice;
+    let OSdevice;
 
-            if (navigator.userAgent.includes('Android')) OSdevice = 'Android';
-            else if (navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPad')) OSdevice = "IOS";
-            else OSdevice = 'DESK';
+    if (navigator.userAgent.includes('Android')) OSdevice = 'Android';
+    else if (navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPad')) OSdevice = "IOS";
+    else OSdevice = 'DESK';
 
-            window.dataLayer && dataLayer.push({
-                event: `Evento de interaccion ${eventName}`,
-                valorMudi: 1,
-                sku: this.skuNumber,
-                sistemaOperativo: OSdevice
-            })
-        };
+    window.dataLayer && dataLayer.push({
+        event: `Evento de interaccion ${eventName}`,
+        valorMudi: 1,
+        sku: this.skuNumber,
+        sistemaOperativo: OSdevice
+    })
+};
 
-        /** viewer event Mudi GTM  */
-        sendEventViewer() {
-            let OSdevice;
+/** viewer event Mudi GTM  */
+sendEventViewer() {
+    let OSdevice;
 
-            if (navigator.userAgent.includes('Android')) OSdevice = 'Android';
-            else if (navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPad')) OSdevice = "IOS";
-            else OSdevice = 'DESK';
+    if (navigator.userAgent.includes('Android')) OSdevice = 'Android';
+    else if (navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPad')) OSdevice = "IOS";
+    else OSdevice = 'DESK';
 
-            window.dataLayer && dataLayer.push({
-                event: `visualizacion_botones`,
-                valorMudi: 1,
-                sku: this.skuNumber,
-                sistemaOperativo: OSdevice
-            })
-        };
+    window.dataLayer && dataLayer.push({
+        event: `visualizacion_botones`,
+        valorMudi: 1,
+        sku: this.skuNumber,
+        sistemaOperativo: OSdevice
+    })
+};
 
         /** verifyExperience  ✔️ */
         async experienceOn(skuNumber, fatherContainer) {
 
-            /** Verify father Container */
-            fatherContainer && (this.fatherContainer = fatherContainer);
+    /** Verify father Container */
+    fatherContainer && (this.fatherContainer = fatherContainer);
 
-            /** Response Mudi server */
-            await this.conectServer(skuNumber);
+    /** Response Mudi server */
+    await this.conectServer(skuNumber);
 
-            /** verify process */
-            if (!this.dataServer) {
-                document.body.querySelector('.btnsMudiContainer') && document.body.querySelector('.btnsMudiContainer').remove();
-                console.warn(`El sku: ${skuNumber} no posee experiencias de 3D  y AR`)
-                return;
-            }
+    /** verify process */
+    if (!this.dataServer) {
+        document.body.querySelector('.btnsMudiContainer') && document.body.querySelector('.btnsMudiContainer').remove();
+        console.warn(`El sku: ${skuNumber} no posee experiencias de 3D  y AR`)
+        return;
+    }
 
-            /** Create Styles */
-            this.createStyles();
-            /** Create Buttons */
-            this.createBtns();
+    /** Create Styles */
+    this.createStyles();
+    /** Create Buttons */
+    this.createBtns();
 
-            /** Viewer event GTM  */
-            this.sendEventViewer();
+    /** Viewer event GTM  */
+    this.sendEventViewer();
 
-        };
+};
 
-        /** Petición para renderizar los elementos Mudi */
-        mudiRequest() {
-            let sku = document.head.querySelector('[property="product:sku"]').getAttribute('content');
-            let container = document.querySelector('.vtex-stack-layout-0-x-stackItem--global__product--images--first');
-            if (container && sku) {
-                this.experienceOn(sku, container)
-            }
-            else if (this.valueRequest > 5000) { return }
-            else {
-                requestAnimationFrame(this.mudiRequest);
-                this.valueRequest++;
-            }
-        };
+/** Petición para renderizar los elementos Mudi */
+mudiRequest() {
+    let sku = document.head.querySelector('[property="product:sku"]').getAttribute('content');
+    let container = document.querySelector('.vtex-stack-layout-0-x-stackItem--global__product--images--first');
+    if (container && sku) {
+        this.experienceOn(sku, container)
+    }
+    else if (this.valueRequest > 5000) { return }
+    else {
+        requestAnimationFrame(this.mudiRequest);
+        this.valueRequest++;
+    }
+};
 
     };
 
-    const mudiExperience = new MudiExperience();
-    window.mudiExperience = mudiExperience;
-    mudiExperience.mudiRequest();
-    console.log('No existe el objeto en windos')
+const mudiExperience = new MudiExperience();
+window.mudiExperience = mudiExperience;
+mudiExperience.mudiRequest();
+console.log('No existe el objeto en windos')
 
 };
